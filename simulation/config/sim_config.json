@@ -1,0 +1,62 @@
+{
+    "simulation": {
+        "time_step": 0.002,
+        "gravity": [0, 0, -9.81],
+        "real_time_factor": 1.0,
+        "max_steps": 10000,
+        "renderer": "GUI",
+        "camera": {
+            "distance": 1.8,
+            "yaw": 45,
+            "pitch": -30,
+            "target_position": [0.0, 0.0, 0.4]
+        }
+    },
+    "robot": {
+        "urdf_path": "models/robotic_arm.urdf",
+        "base_position": [0.0, 0.0, 0.0],
+        "base_orientation": [0.0, 0.0, 0.0],
+        "use_fixed_base": true,
+        "joint_damping": 0.1,
+        "max_force": 150.0
+    },
+    "environment": {
+        "ground_plane": true,
+        "obstacles": [
+            {
+                "type": "box",
+                "position": [0.5, 0.3, 0.1],
+                "half_extents": [0.05, 0.05, 0.1],
+                "color": [0.8, 0.2, 0.2, 1.0]
+            },
+            {
+                "type": "sphere",
+                "position": [0.4, -0.2, 0.05],
+                "radius": 0.05,
+                "color": [0.2, 0.6, 0.9, 1.0]
+            },
+            {
+                "type": "cylinder",
+                "position": [0.3, 0.0, 0.075],
+                "radius": 0.03,
+                "height": 0.15,
+                "color": [0.3, 0.8, 0.3, 1.0]
+            }
+        ],
+        "table": {
+            "enabled": true,
+            "position": [0.4, 0.0, 0.0],
+            "size": [0.6, 0.8, 0.02],
+            "leg_height": 0.4,
+            "color": [0.4, 0.35, 0.3, 1.0]
+        }
+    },
+    "logging": {
+        "enabled": true,
+        "output_dir": "logs",
+        "log_joint_states": true,
+        "log_end_effector": true,
+        "log_interval_steps": 10,
+        "export_format": "csv"
+    }
+}
