@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Robotics Simulation & Training Environment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="rosso-text">AI</span>Robotics
+        </div>
+        <ul class="nav-links">
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+        <a href="#launch" class="btn btn-outline">Developer Login</a>
+    </nav>
+
+    <header class="hero" id="platform">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Design. Train. <span class="rosso-text">Deploy.</span></h1>
+            <p class="hero-subtitle fade-in-up delay-1">A scalable, modular platform to design, train, and validate AI algorithms on virtual robotic systems before a single real-world robot is ever deployed.</p>
+            <div class="hero-actions fade-in-up delay-2">
+                <a href="#launch" class="btn btn-primary">Launch Simulation <i class="fas fa-rocket"></i></a>
+                <a href="#modules" class="btn btn-secondary">Explore Modules <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-graphic fade-in delay-3">
+            <img src="hero-bg.png" alt="Futuristic Robotic Arm" class="hero-img">
+            <div class="glow-ring"></div>
+        </div>
+    </header>
+
+    <section class="modules-section" id="modules">
+        <div class="section-header reveal">
+            <h2 class="section-title">Core <span class="rosso-text">Modules</span></h2>
+            <p class="section-desc">Independent but interoperable modules built for a high-fidelity simulation ecosystem.</p>
+        </div>
+        <div class="module-grid">
+            <div class="module-card reveal delay-1">
+                <div class="card-icon"><i class="fas fa-cube"></i></div>
+                <h3>Simulation Engine</h3>
+                <p>Handles physics, collision detection, and real-time 3D rendering. Compatible with Gazebo, Unity3D, and Unreal Engine.</p>
+            </div>
+            <div class="module-card reveal delay-2">
+                <div class="card-icon"><i class="fas fa-robot"></i></div>
+                <h3>Robot Model Manager</h3>
+                <p>Imports and manages URDF/SDF robot models including kinematics, joints, sensors, and actuators.</p>
+            </div>
+            <div class="module-card reveal delay-3">
+                <div class="card-icon"><i class="fas fa-eye"></i></div>
+                <h3>Sensor Simulation</h3>
+                <p>Emulates RGB/depth cameras, LIDAR, IMU, GPS, and tactile sensors with configurable noise profiles.</p>
+            </div>
+            <div class="module-card reveal delay-1">
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI Training Interface</h3>
+                <p>Python APIs and OpenAI Gym-compliant RL environment. Connects to TensorFlow, PyTorch, and JAX.</p>
+            </div>
+            <div class="module-card reveal delay-2">
+                <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>Multi-Agent Controller</h3>
+                <p>Coordinates swarm and collaborative scenarios through messaging protocols and priority scheduling.</p>
+            </div>
+            <div class="module-card reveal delay-3">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Data & Visualization</h3>
+                <p>High-frequency logging of telemetry. Exports to CSV, JSON, and ROS bag formats with live dashboards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section" id="impact">
+        <div class="impact-overlay"></div>
+        <div class="impact-content reveal">
+            <h2 class="section-title text-center">Expected <span class="rosso-text">Impact</span></h2>
+            <div class="impact-stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-arrow-down"></i></div>
+                    <h4 class="rosso-text">Cost</h4>
+                    <p>Drastically reduced real-world testing spend.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-arrow-up"></i></div>
+                    <h4 class="rosso-text">Speed</h4>
+                    <p>Faster AI iteration and deployment cycles.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-infinity"></i></div>
+                    <h4 class="rosso-text">Scale</h4>
+                    <p>Cloud-native parallel simulation execution.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <h4 class="rosso-text">Open</h4>
+                    <p>Shared platform across research communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+        <div class="section-header reveal">
+            <h2 class="section-title">Development <span class="rosso-text">Roadmap</span></h2>
+            <p class="section-desc">Delivered across eight sequential phases spanning 14.5 months.</p>
+        </div>
+        <div class="timeline reveal">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Phase 1: Planning & Design</h4>
+                    <span class="duration">1 month</span>
+                    <p>Architecture, tech stack selection.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Phase 2 & 3: Simulation & Integration</h4>
+                    <span class="duration">4 months</span>
+                    <p>Physics engine setup and robot model integration.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Phase 4 & 5: AI & Multi-Agent</h4>
+                    <span class="duration">5 months</span>
+                    <p>AI Interface APIs, swarm coordination, and cloud execution.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Phase 6 - 8: Polish & Release</h4>
+                    <span class="duration">4.5 months</span>
+                    <p>Dashboards, performance benchmarking, and final packaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><span class="rosso-text">AI</span>Robotics</div>
+            <p>&copy; 2026 AI Robotics Simulation & Training Environment. Confidential.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
